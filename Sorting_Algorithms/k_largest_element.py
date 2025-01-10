@@ -20,10 +20,10 @@ def k_largest_element(arr, k):
     - Returns the k largest elements
        
     """
-    if len(arr) <= 1:
+    n = len(arr)
+    if n <= 1:
         return arr
     
-    n = len(arr)
     pivot = arr[n//2]
     left = [x for x in arr if x < pivot]
     right = [x for x in arr if x > pivot]

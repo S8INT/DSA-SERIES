@@ -11,7 +11,7 @@
 
 def quicksort(nums, start=0, end=None):
     if end is None:
-        nums = list(nums)
+        # nums = list(nums)
         end = len(nums)-1
     
     if start < end:
